@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AriaApp.Pages.RegistrationPage"
+             Title="RegistrationPage">
+    <StackLayout>
+        <Label Text="Inscription" FontSize="24" HorizontalOptions="CenterAndExpand" Margin="0,20" />
+        <Entry Placeholder="Nom" x:Name="NomEntry" />
+        <Entry Placeholder="Email" x:Name="EmailEntry" />
+        <Entry Placeholder="Mot de passe" x:Name="MotDePasseEntry" IsPassword="True" />
+        <Button Text="S'inscrire" Clicked="OnRegisterClicked" HorizontalOptions="CenterAndExpand" Margin="0,20" />
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AriaApp.Pages.LoginPage"
+             Title="LoginPage">
+    <StackLayout>
+        <Label Text="Connexion" FontSize="24" HorizontalOptions="CenterAndExpand" Margin="0,20" />
+        <Entry Placeholder="Email" x:Name="EmailEntry" />
+        <Entry Placeholder="Mot de passe" x:Name="MotDePasseEntry" IsPassword="True" />
+        <Button Text="Se connecter" Clicked="OnLoginClicked" HorizontalOptions="CenterAndExpand" Margin="0,20" />
+    </StackLayout>
+</ContentPage>

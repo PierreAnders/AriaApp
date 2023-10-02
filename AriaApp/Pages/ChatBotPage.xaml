@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AriaApp.ChatBotPage"
+             BackgroundColor="#E5E5E5">
+
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView x:Name="MessageListView">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Label Text="{Binding Text}" HorizontalOptions="FillAndExpand" VerticalOptions="Start" />
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            <Entry x:Name="MessageEntry" Placeholder="Saisissez un message" />
+            <Button Text="Envoyer" Clicked="SendMessage_Clicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
